@@ -1,0 +1,84 @@
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Header */
+header {
+    background-color: #0f766e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Grid gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Figure */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+/* Image container */
+.image-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #94a3b8;
+}
+
+/* Image */
+.image-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s ease;
+}
+
+/* Hover effects */
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.image-box:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Caption */
+figcaption {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Footer */
+footer {
+    background-color: #0f766e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

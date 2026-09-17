@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    text-align: center;
+    padding: 30px;
+}
+
+.team {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Common card design */
+.card {
+    width: 250px;
+    padding: 25px;
+    margin: 10px;
+
+    background-color: white;
+    border: 2px solid #6366f1;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    box-sizing: border-box;
+}
+
+/* Highlighted card */
+.leader {
+    background-color: #dbeafe;
+    border: 3px dashed #1d4ed8;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

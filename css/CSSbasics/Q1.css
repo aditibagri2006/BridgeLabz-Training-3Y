@@ -1,0 +1,83 @@
+/* Basic page setup */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    
+    /* Flexbox keeps footer at bottom */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #172554;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 5%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding-top: 100px;
+}
+
+.intro {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    padding: 30px;
+}
+
+.intro div {
+    width: 40%;
+}
+
+.intro h2 {
+    font-size: 2rem;
+}
+
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.intro img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

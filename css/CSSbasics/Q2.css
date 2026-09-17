@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: #312e81;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* First section with linear gradient */
+.section1 {
+    min-height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+}
+
+/* Second section with radial gradient */
+.section2 {
+    min-height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    background: radial-gradient(circle, #0891b2, #164e63);
+}
+
+/* Third section */
+.section3 {
+    min-height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    background-image: url("paris.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Another fixed background */
+.section1 {
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #111827;
+    text-align: center;
+    padding: 20px;
+}

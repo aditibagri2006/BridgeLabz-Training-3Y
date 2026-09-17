@@ -1,0 +1,61 @@
+/* Basic page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+/* Header */
+header {
+    background-color: #166534;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Grid cheat sheet */
+.cheat-sheet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    padding: 40px;
+}
+
+/* Individual topics */
+article {
+    background-color: white;
+    padding: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+article:hover {
+    transform: translateY(-5px);
+    background-color: #dcfce7;
+}
+
+/* Footer */
+footer {
+    background-color: #166534;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+
+    .cheat-sheet {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+}

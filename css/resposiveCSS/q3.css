@@ -1,0 +1,76 @@
+/* Basic page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+/* Header */
+header {
+    background-color: #7c3aed;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Cards using Flexbox */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 50px;
+}
+
+/* Card */
+.card {
+    flex: 1;
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+
+    transition: 0.3s ease;
+}
+
+/* Hover background */
+.card:hover {
+    background-color: #ddd6fe;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #7c3aed;
+    color: white;
+    padding: 15px;
+}
+
+/* Tablet - 2 columns */
+@media (max-width: 900px) {
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 25px);
+        box-sizing: border-box;
+    }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 600px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

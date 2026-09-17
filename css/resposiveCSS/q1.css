@@ -1,0 +1,93 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 25px;
+}
+
+/* Responsive Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Image card */
+.image-card {
+    margin: 0;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+    text-align: center;
+}
+
+/* Images */
+.image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+/* Different filters */
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(150%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.hue {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+.image-card img:hover {
+    filter: none;
+}
+
+/* Captions */
+figcaption {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px;
+}
+
+/* One column below 600px */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

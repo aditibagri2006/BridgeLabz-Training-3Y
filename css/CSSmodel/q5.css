@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    padding: 40px;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 3px solid #2563eb;
+}
+
+/* Attribute selector */
+input[type="email"] {
+    border: 3px solid #16a34a;
+}
+
+/* Attribute selector: links starting with https */
+a[href^="https"] {
+    color: #dc2626;
+}
+
+/* Pseudo-class: hover */
+a:hover {
+    background-color: #fde68a;
+}
+
+/* Pseudo-class: focus */
+input:focus {
+    background-color: #dbeafe;
+}
+
+/* Pseudo-class: nth-child */
+li:nth-child(2) {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* Child combinator (>) */
+.container > p {
+    background-color: #dbeafe;
+}
+
+/* Adjacent sibling combinator (+) */
+ul + p {
+    border: 2px solid #16a34a;
+}
+
+/* General sibling combinator (~) */
+ul ~ p {
+    padding: 10px;
+}
+
+/* Descendant selector */
+.container p {
+    font-size: 18px;
+}
+
+/* Pseudo-element before */
+h1::before {
+    content: "★ ";
+}
+
+/* Pseudo-element after */
+h1::after {
+    content: " ★";
+}

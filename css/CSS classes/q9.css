@@ -1,0 +1,79 @@
+/* Page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+/* Header */
+header {
+    background-color: #be123c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Flexbox layout */
+.effects {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Effect cards */
+.effect-card {
+    width: 220px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #cbd5e1;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    border: 2px solid #e11d48;
+    border-radius: 8px;
+    background-color: #e11d48;
+    color: white;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover: color + scale + shadow */
+button:hover {
+    background-color: #7c3aed;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px #94a3b8;
+}
+
+/* Active effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Focus effect */
+button:focus {
+    outline: 3px solid #fda4af;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    background-color: #be123c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .effects {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+}

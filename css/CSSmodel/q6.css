@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.item {
+    text-align: center;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #60a5fa;
+    color: white;
+
+    transition: all 0.4s ease;
+}
+
+/* Rotate */
+.rotate:hover {
+    transform: rotate(15deg);
+}
+
+/* Scale */
+.scale:hover {
+    transform: scale(1.2);
+}
+
+/* Translate */
+.translate:hover {
+    transform: translate(30px, -20px);
+}
+
+/* Skew */
+.skew:hover {
+    transform: skew(15deg);
+}

@@ -1,0 +1,162 @@
+/* Apply border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2fe;
+}
+
+/* Header */
+header {
+    background-color: #0369a1;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main area */
+main {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Main card */
+.main-card {
+    width: 800px;
+    background-color: white;
+    border: 2px solid #bae6fd;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px #94a3b8;
+}
+
+/* Flexbox inside card */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Image */
+.image-area {
+    flex: 1;
+}
+
+.image-area img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px #cbd5e1;
+}
+
+/* Form area */
+.form-area {
+    flex: 1;
+}
+
+.form-area h2 {
+    color: #0369a1;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+    outline: 3px solid #bae6fd;
+    border-color: #0284c7;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #0284c7;
+    border-radius: 7px;
+    background-color: #0284c7;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px #94a3b8;
+}
+
+/* Active effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: white;
+    color: #0284c7;
+}
+
+/* Footer */
+footer {
+    background-color: #0369a1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+
+    .main-card {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image-area,
+    .form-area {
+        width: 100%;
+    }
+}

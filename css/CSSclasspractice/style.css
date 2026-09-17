@@ -1,0 +1,67 @@
+
+
+.container {
+    border:1px solid red;
+    width: 500px;
+    height: 1000px;
+
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    position: sticky;
+}
+/*in realtive positioning, the element is positioned relative to its normal position. */
+.box1 {
+    background-color: rgb(238, 132, 132);
+    top: 0px;
+}
+/*in absolute positioning, the element is positioned relative to its(browser) e.g.chat box first positioned (not static) ancestor element. */
+.box2 {
+    background-color: rgb(132, 238, 132);
+    height: 130px;
+    width: 280px;
+    left: 17px;
+    top: 10px
+}
+/*in sticky positioning, the element is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). */
+.box3 {
+    background-color: rgb(132, 132, 238);
+    height: 110px;
+    width: 260px;
+    left: 110px;
+    top: 20px;
+}
+.box4 {
+    background-color: rgb(238, 238, 132);
+    height: 110px;
+    width: 260px;
+    left: 150px;
+    top: 0px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box{
+  background-color: rgb(238, 132, 132);
+  width: 50%;
+  margin:20px;
+  padding: 30px;  
+  border: 5px dashed black;
+} */

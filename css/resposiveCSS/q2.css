@@ -1,0 +1,93 @@
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Header using Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 40px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Navigation hover */
+nav a:hover {
+    background-color: #2563eb;
+    border-radius: 5px;
+}
+
+/* Feature boxes */
+.features {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Individual box */
+.feature-box {
+    flex: 1;
+    max-width: 280px;
+
+    background-color: white;
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+
+    transition: 0.3s ease;
+}
+
+/* Scale on hover */
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 15px;
+}
+
+/* Stack boxes below 750px */
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 80%;
+    }
+}

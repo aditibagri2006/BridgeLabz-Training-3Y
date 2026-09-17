@@ -1,0 +1,79 @@
+/* Basic page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Header */
+header {
+    background-color: #9f1239;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Side-by-side images */
+.comparison {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    padding: 40px;
+}
+
+/* Figure */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+/* Images */
+figure img {
+    width: 400px;
+    max-width: 100%;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+
+    transition: 0.5s ease;
+}
+
+/* Filter applied to right image */
+.filtered {
+    filter: brightness(60%);
+}
+
+/* Remove filter on hover */
+.filtered:hover {
+    filter: none;
+}
+
+/* Caption */
+figcaption {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #9f1239;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Stack below 700px */
+@media (max-width: 700px) {
+
+    .comparison {
+        flex-direction: column;
+    }
+
+    figure img {
+        width: 100%;
+    }
+}

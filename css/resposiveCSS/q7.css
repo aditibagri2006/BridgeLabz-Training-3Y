@@ -1,0 +1,120 @@
+/* Basic page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Header with Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #172554;
+    color: white;
+
+    padding: 20px 40px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+    border-radius: 5px;
+}
+
+/* Main Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Main sections */
+.main-grid section {
+    background-color: white;
+    padding: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Gallery */
+.images {
+    display: flex;
+    gap: 10px;
+}
+
+.images img {
+    width: 32%;
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #172554;
+    color: white;
+    padding: 15px;
+}
+
+/* Stack all sections */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+    }
+}

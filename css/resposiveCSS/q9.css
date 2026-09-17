@@ -1,0 +1,74 @@
+/* Basic page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    background-color: #4338ca;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Grid layout */
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+    padding: 50px;
+}
+
+/* Principle boxes */
+article {
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #cbd5e1;
+
+    transition: 0.4s ease;
+}
+
+/* Hover gradient and text color */
+article:hover {
+    background: linear-gradient(135deg, #4338ca, #7c3aed);
+    color: white;
+
+    transform: translateY(-8px);
+}
+
+/* Code example */
+code {
+    display: block;
+
+    margin-top: 20px;
+    padding: 12px;
+
+    background-color: #e2e8f0;
+    color: #1e293b;
+
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #4338ca;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Single column below 600px */
+@media (max-width: 600px) {
+
+    .principles {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}

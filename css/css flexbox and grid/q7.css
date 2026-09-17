@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3f4f6;
+}
+
+
+/* Loader */
+
+.loader {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* Circles */
+
+.circle {
+    width: 20px;
+    height: 20px;
+
+    background-color: #4f46e5;
+
+    border-radius: 50%;
+
+    animation-name: move;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Animation Delay */
+
+.circle1 {
+    animation-delay: 0s;
+}
+
+.circle2 {
+    animation-delay: 0.2s;
+}
+
+.circle3 {
+    animation-delay: 0.4s;
+}
+
+
+/* Keyframes */
+
+@keyframes move {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}

@@ -1,0 +1,96 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Flexbox for all examples */
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 50px;
+}
+
+/* Individual example boxes */
+.example {
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+}
+
+/* :hover example */
+.example a {
+    display: inline-block;
+    color: white;
+    background-color: #2563eb;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.example a:hover {
+    background-color: #16a34a;
+}
+
+/* :focus example */
+.example button {
+    padding: 10px 20px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.example button:focus {
+    outline: 3px solid #93c5fd;
+    background-color: #dbeafe;
+}
+
+/* :active example */
+.example button:active {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* :nth-child() example */
+.example li:nth-child(2) {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .examples {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .examples {
+        flex-direction: column;
+        align-items: center;
+    }
+}

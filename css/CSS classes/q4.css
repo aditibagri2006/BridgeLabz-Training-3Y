@@ -1,0 +1,82 @@
+/* Element selector */
+p {
+    font-size: 18px;
+    color: #334155;
+}
+
+/* Class selector */
+.special {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* ID selector */
+#unique {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid #16a34a;
+    border-radius: 6px;
+}
+
+/* Child combinator > */
+.parent > p {
+    background-color: #dbeafe;
+    padding: 10px;
+}
+
+/* Descendant combinator */
+.parent p {
+    margin: 10px;
+}
+
+/* Adjacent sibling + */
+ul + p {
+    border: 2px solid #9333ea;
+    padding: 10px;
+}
+
+/* General sibling ~ */
+ul ~ p {
+    background-color: #fef3c7;
+}
+
+/* Link styling */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Header */
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main content */
+.content {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

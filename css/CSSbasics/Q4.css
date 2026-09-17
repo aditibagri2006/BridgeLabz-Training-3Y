@@ -1,0 +1,52 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Space between paragraphs */
+main p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Larger first letter */
+main p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Bold first line */
+main p::first-line {
+    font-weight: bold;
+}
+
+/* Highlighted text */
+mark {
+    background-color: #fde68a;
+    padding: 3px;
+}
+
+/* Blockquote */
+blockquote {
+    background-color: #e0f2fe;
+    border-left: 6px solid #0284c7;
+    padding: 20px;
+    margin-top: 30px;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+h2{
+    position: relative;
+}
+
+
+h2::before {
+    content: "🌿 ";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #4f46e5;
+    left:0px;
+    top: 25px;
+}
+.container {
+   width: 500px;
+   height: 500px;
+   border: 1px solid #4f46e5;
+   overflow: hidden;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.icon-box {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.detail {
+    display: none;
+
+    position: absolute;
+
+    left: 40px;
+    top: 5px;
+
+    background-color: black;
+    color: white;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.icon-box:hover .detail {
+    display: block;
+}

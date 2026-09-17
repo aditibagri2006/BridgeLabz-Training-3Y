@@ -1,0 +1,59 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eff6ff;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    background-color: #0369a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Content */
+.content {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #cbd5e1;
+}
+
+/* Responsive heading */
+.content h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Responsive paragraph */
+.content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Footer */
+footer {
+    background-color: #0369a1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Better readability on smaller screens */
+@media (max-width: 700px) {
+
+    .content {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .content p {
+        line-height: 1.8;
+    }
+}

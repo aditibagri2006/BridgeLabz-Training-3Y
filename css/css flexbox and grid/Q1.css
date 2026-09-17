@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f3ff;
+}
+
+h1 {
+    color: #5b21b6;
+    margin: 30px;
+}
+
+
+/* Product Gallery */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+
+/* Product Cards */
+
+.card {
+    padding: 30px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 4px 10px #cccccc;
+}
+
+.card h2 {
+    color: #333333;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Different colors */
+
+.card1 {
+    background-color: #dbeafe;
+}
+
+.card2 {
+    background-color: #fce7f3;
+}
+
+.card3 {
+    background-color: #dcfce7;
+}
+
+.card4 {
+    background-color: #fef3c7;
+}
+
+.card5 {
+    background-color: #ede9fe;
+}
+
+.card6 {
+    background-color: #cffafe;
+}
+
+.card7 {
+    background-color: #ffedd5;
+}
+
+.card8 {
+    background-color: #fce7f3;
+}
+
+
+/* Hover Effect */
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}

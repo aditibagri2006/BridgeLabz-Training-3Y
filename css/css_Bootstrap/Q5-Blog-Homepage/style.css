@@ -1,0 +1,15 @@
+:root {
+  /* Bootstrap CSS custom properties let us apply a consistent custom theme. */
+  --bs-primary: #6c4ab6;
+  --bs-font-sans-serif: 'DM Sans', sans-serif;
+}
+body { font-family: var(--bs-font-sans-serif); color: #29243a; }
+.blog-header { background: #f2edff; }
+.brand { font: 700 1.7rem 'Playfair Display', serif; color: #493078; }
+.blog-header nav a { color: #493078; text-decoration: none; font-weight: 700; }
+.blog-card { border: 0; overflow: hidden; box-shadow: 0 5px 20px rgba(50,30,80,.08); }
+.blog-card img { height: 250px; object-fit: cover; }
+.theme-text { color: #6c4ab6; }
+.theme-badge, .theme-footer { background: #6c4ab6; color: white; }
+.btn-theme { background: #6c4ab6; color: white; border: 0; }
+.btn-theme:hover { background: #493078; color: white; }

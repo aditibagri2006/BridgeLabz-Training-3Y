@@ -1,0 +1,8 @@
+/* Custom styles complement Bootstrap's responsive grid and utility classes. */
+body { font-family: Arial, sans-serif; color: #1e293b; }
+.site-header { background: #10233f; }
+.hero-section { color: white; background: linear-gradient(120deg, #10233f, #176b87); padding: 5rem 0; }
+.min-vh-75 { min-height: 75vh; }
+.small-label { letter-spacing: .15em; color: #b9e5ef; }
+.card { border: 0; box-shadow: 0 4px 18px rgba(0,0,0,.06); transition: transform .25s ease; }
+.card:hover { transform: translateY(-5px); }

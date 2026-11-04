@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; color: #263247; }
+.pricing-card { border: 0; border-radius: 18px; box-shadow: 0 5px 22px rgba(0,0,0,.06); transition: transform .25s ease, box-shadow .25s ease; }
+.pricing-card:hover { transform: translateY(-8px); box-shadow: 0 1rem 2rem rgba(0,0,0,.13); }
+.featured-plan { background: #0d6efd; color: white; transform: scale(1.02); }
+.featured-plan hr { border-color: rgba(255,255,255,.35); }

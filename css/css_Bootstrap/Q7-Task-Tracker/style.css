@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; }
+.list-group-item { border-color: #e9ecef; }
+.list-group-item:hover { background: #f8fbff; }
+.badge { letter-spacing: .02em; }

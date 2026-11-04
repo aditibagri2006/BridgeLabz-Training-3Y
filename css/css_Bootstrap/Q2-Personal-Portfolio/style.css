@@ -1,0 +1,4 @@
+/* Portfolio-specific styling; Bootstrap handles spacing and responsiveness. */
+body { font-family: Arial, sans-serif; }
+.profile-img { width: 250px; height: 250px; object-fit: cover; border: 7px solid white; box-shadow: 0 8px 25px rgba(0,0,0,.12); }
+.btn { border-radius: 50px; }

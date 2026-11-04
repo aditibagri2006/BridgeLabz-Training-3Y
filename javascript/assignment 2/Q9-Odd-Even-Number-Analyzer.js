@@ -1,0 +1,27 @@
+// Q9. Odd–Even Number Analyzer
+
+const numbers = [];
+const results = [];
+
+// Use a loop to store numbers from 1 through 30 in an array.
+for (let number = 1; number <= 30; number++) {
+    numbers.push(number);
+}
+
+// Classify each number and store the result in a new array.
+for (const number of numbers) {
+    let classification;
+
+    if (number % 3 === 0 && number % 5 === 0) {
+        classification = "FizzBuzz";
+    } else if (number % 2 === 0) {
+        classification = "Even";
+    } else {
+        classification = "Odd";
+    }
+
+    results.push(`${number}: ${classification}`);
+}
+
+console.log("ODD–EVEN NUMBER ANALYZER");
+console.log(results);
